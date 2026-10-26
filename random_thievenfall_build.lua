@@ -11,7 +11,7 @@ local SkillPoints = 21 -- Set this based on current level/infamy.
 ----------------------
 
 local Skills = {}
-
+ 
 Skills.Tier4 = { -- Setup available skills
   { tree = "Mastermind/Medic", skill = "Uppers", levels = 1, req = "First Aid Kit" }, { tree = "Mastermind/Medic", skill = "Inspire", levels = 2 }, { tree = "Mastermind/Medic", skill = "Amphetamine", levels = 2, req = "First Aid Kit" },
   { tree = "Mastermind/Marksman", skill = "Helmet Popping", levels = 1 }, { tree = "Mastermind/Marksman", skill = "Coup de Grace", levels = 1 }, { tree = "Mastermind/Marksman", skill = "Graze", levels = 2 },
@@ -21,7 +21,7 @@ Skills.Tier4 = { -- Setup available skills
   { tree = "Enforcer/Muscle", skill = "Herd Mentality", levels = 1 }, { tree = "Enforcer/Muscle", skill = "Insanity", levels = 3 },
   { tree = "Technician/Engineer", skill = "Jack of all Trades", levels = 1 }, { tree = "Technician/Engineer", skill = "Plating", levels = 1, req = "Sentry Gun" },
   { tree = "Technician/Gunsmith", skill = "Illegal Parts", levels = 2 }, { tree = "Technician/Gunsmith", skill = "Mag Plus", levels = 2 },
-  { tree = "Technician/Breacher", skill = "Repair System", levels = 2 }, { tree = "Technician/Breacher", skill = "Shaped Charge", levels = 3, req = "Trip Mine" },
+  { tree = "Technician/Breacher", skill = "Repair System", levels = 2 }, { tree = "Technician/Breacher", skill = "Sensor Mines", levels = 1, req = "Trip Mine" },
   { tree = "Ghost/Infiltrator", skill = "Cyber Warfare", levels = 2, req = "Feedback" },
   { tree = "Ghost/Hitman", skill = "Hypocritical", levels = 2 }, { tree = "Ghost/Hitman", skill = "Chamber Vent", levels = 2 },
   { tree = "Ghost/Agent", skill = "Rise Above", levels = 3 }, { tree = "Ghost/Agent", skill = "Sprint Loaded", levels = 1 },
@@ -39,7 +39,7 @@ Skills.Tier3 = {
   { tree = "Enforcer/Muscle", skill = "Shock And Awe", levels = 1 }, { tree = "Enforcer/Muscle", skill = "Nerves of Steel", levels = 1 },
   { tree = "Technician/Engineer", skill = "Armor Penetration", levels = 1, req = "Sentry Gun" }, { tree = "Technician/Engineer", skill = "Tower Defense", levels = 2, req = "Sentry Gun" },
   { tree = "Technician/Gunsmith", skill = "Magazine Funnel", levels = 3 }, { tree = "Technician/Gunsmith", skill = "Black Tip", levels = 2 },
-  { tree = "Technician/Breacher", skill = "Kickstarter", levels = 1 }, { tree = "Technician/Breacher", skill = "Fire Trap", levels = 2, req = "Trip Mine" }, { tree = "Technician/Breacher", skill = "Sensor Mines", levels = 1, req = "Trip Mine" },
+  { tree = "Technician/Breacher", skill = "Kickstarter", levels = 1 }, { tree = "Technician/Breacher", skill = "Fire Trap", levels = 2, req = "Trip Mine" }, { tree = "Technician/Breacher", skill = "McCalister", levels = 2, req = "Trip Mine" },
   { tree = "Ghost/Infiltrator", skill = "Dexterity", levels = 1 }, { tree = "Ghost/Infiltrator", skill = "Feedback", levels = 2, req = "ECM" },
   { tree = "Ghost/Hitman", skill = "Dire Need", levels = 2 }, { tree = "Ghost/Hitman", skill = "Low Blow", levels = 2 }, { tree = "Ghost/Hitman", skill = "Pocket Silencer", levels = 1 },
   { tree = "Ghost/Agent", skill = "Break", levels = 3 }, { tree = "Ghost/Agent", skill = "Optical Illusions", levels = 2 }, { tree = "Ghost/Agent", skill = "Second Wind", levels = 2 },
@@ -57,7 +57,7 @@ Skills.Tier2 = {
   { tree = "Enforcer/Muscle", skill = "Beast of Burden", levels = 2 }, { tree = "Enforcer/Muscle", skill = "Iron Man", levels = 1 },
   { tree = "Technician/Engineer", skill = "Ammo Reserve", levels = 2, req = "Sentry Gun" }, { tree = "Technician/Engineer", skill = "Eco Sentry", levels = 1, req = "Sentry Gun" },
   { tree = "Technician/Gunsmith", skill = "Barrel Alignment", levels = 2 }, { tree = "Technician/Gunsmith", skill = "Tinkerer", levels = 3 }, 
-  { tree = "Technician/Breacher", skill = "Drill Sawgeant", levels = 2 }, { tree = "Technician/Breacher", skill = "Fragmentation", levels = 2, req = "Trip Mine" }, { tree = "Technician/Breacher", skill = "McCalister", levels = 2, req = "Trip Mine" }, 
+  { tree = "Technician/Breacher", skill = "Drill Sawgeant", levels = 2 }, { tree = "Technician/Breacher", skill = "Fragmentation", levels = 2, req = "Trip Mine" }, { tree = "Technician/Breacher", skill = "Shaped Charge", levels = 3, req = "Trip Mine" },
   { tree = "Ghost/Infiltrator", skill = "Sixth Sense", levels = 2 },
   { tree = "Ghost/Hitman", skill = "Tactical Reload", levels = 2 }, { tree = "Ghost/Hitman", skill = "Ambidexterity", levels = 3 }, { tree = "Ghost/Hitman", skill = "The Professional", levels = 2 },
   { tree = "Ghost/Agent", skill = "Composure", levels = 3 }, { tree = "Ghost/Agent", skill = "Duck and Cover", levels = 2 }, { tree = "Ghost/Agent", skill = "Shockproof", levels = 3 }, { tree = "Ghost/Agent", skill = "Sneaky Bastard", levels = 2 },
